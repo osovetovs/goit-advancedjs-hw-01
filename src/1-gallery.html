@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW — Gallery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-act="active"
+    />
+
+    <main class="container">
+      <section aria-labelledby="welcome-heading" style="margin-top: 1rem">
+        <h1 id="welcome-heading" class="main-title">
+          <span class="main-title-gradient">Welcome</span> to the Gallery
+        </h1>
+        <load src="./partials/back-link.html" />
+      </section>
+
+      <section aria-labelledby="gallery-heading" style="margin-top: 2rem">
+        <h2 id="gallery-heading" class="visually-hidden">Image Gallery</h2>
+        <ul class="gallery"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./js/1-gallery.js"></script>
+    <load src="./partials/footer.html" />
+  </body>
+</html>
