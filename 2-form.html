@@ -2,81 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW — Feedback Form</title>
+    <title>Форма зворотного зв'язку</title>
     <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/styles-DD3qoKza.js">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-DvPDDfy5.css">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/2-form-DPCSYuNf.css">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/2-form-rnn-89-T.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/goit-advancedjs-hw-01/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./1-gallery.html">1-Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./2-form.html">2-Form</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-    <main class="container" style="margin-top: 1rem">
-      <section aria-labelledby="form-heading">
-        <h1 id="form-heading" class="main-title">
-          <span class="main-title-gradient">Feedback</span> form
-        </h1>
-        <a class="back-link" href="./index.html">Go back</a>
-
-      </section>
-
-      <section style="margin-top: 2rem">
-        <form class="feedback-form" autocomplete="off" novalidate>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-
-          <label>
-            Message
-            <textarea
-              name="message"
-              rows="8"
-              placeholder="Your message..."
-            ></textarea>
-          </label>
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    <div class="container">
+      <div class="back-link">
+        <a href="./index.html">Go Back</a>
+      </div>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input
+            class="feedback-form-input"
+            type="email"
+            name="email"
+            autofocus
+          />
+        </label>
+        <label>
+          Message
+          <textarea
+            class="feedback-form-input"
+            name="message"
+            rows="8"
+          ></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
