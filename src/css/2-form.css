@@ -57,7 +57,6 @@ textarea.feedback-form-input {
   box-sizing: border-box;
 }
 
-
 .feedback-form-input:hover {
   border: 1px solid #000;
 }
@@ -79,5 +78,5 @@ button {
 }
 
 button:hover {
-  background: #6C8CFF;
+  background: #6c8cff;
 }
